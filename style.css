@@ -1,4 +1,4 @@
-/* 1. Global Reset & Typography */
+/* Global Reset & Typography */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 
-/* 2. Layout Container */
+/* Layout Container */
 body > div {
     margin: 0 auto 2rem auto;
     /* Card Background in Dark Mode */
@@ -26,12 +26,12 @@ body > div {
     box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* Stronger shadow for dark depth */
 }
 
-/* 3. Headings */
+/* Headings */
 h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #333; /* Darker divider */
 }
@@ -46,13 +46,13 @@ h2 {
     letter-spacing: 0.05em;
 }
 
-/* 4. Text & Paragraphs */
+/* Text & Paragraphs */
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     color: #cccccc;
 }
 
-/* 5. Lists & Links Styling */
+/* Lists & Links Styling */
 ul {
     list-style: none;
 }
@@ -83,7 +83,7 @@ a:hover li {
     background-color: #252525;
 }
 
-/* 6. Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
     body {
         padding: 1rem;
@@ -94,7 +94,7 @@ a:hover li {
     }
 }
 
-/* 7. Special Intro Box Styling */
+/* Special Intro Box Styling */
 .intro-box {
     position: relative; /* Crucial for absolute positioning */
     background-color: #252525; 
@@ -103,6 +103,19 @@ a:hover li {
     padding: 20px;
     margin-bottom: 30px;
     width: 800px;
+}
+
+.intro-box h1 {
+    margin-top: 0;
+    color: #4da3ff; /* Matching accent color */
+    border-bottom: none;
+}
+
+.intro-box p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
 }
 
 /* Position the logo */
@@ -128,19 +141,8 @@ a:hover li {
     filter: invert(56%) sepia(82%) saturate(2718%) hue-rotate(188deg) brightness(101%) contrast(101%);
 }
 
-.intro-box h1 {
-    margin-top: 0;
-    color: #4da3ff; /* Matching accent color */
-    border-bottom: none;
-}
 
-.intro-box p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #ffffff;
-}
 
-/* Highlights for your GPA or strongsuits */
 strong {
     color: #4da3ff;
 }
@@ -230,4 +232,25 @@ html {
     .sidebar-nav {
         display: none;
     }
+}
+
+.sticky-footer {
+    background-color: #000000;
+  
+  /* Positioning */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+  /* Sizing & Centering */
+  height: 40px;            /* Fixed thin height */
+  display: flex;
+  align-items: center;     /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  
+  /* Typography */
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
